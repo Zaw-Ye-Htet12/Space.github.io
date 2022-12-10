@@ -1,0 +1,703 @@
+/* css for home */
+/* laptop view */
+html,body{
+    padding: 0 ;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar_above{
+    margin-top: 1.5rem;
+}
+.homebackground{
+    background-image: url(assets/home/background-home-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    
+    height: 100vh;
+    background-repeat: no-repeat;
+    
+}
+.option{
+    backdrop-filter:blur(30px) ;
+    
+    width: 60%;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0.1);
+    height: 90px;
+    padding-top: 30px;
+}
+
+.push{
+    
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color: #ffff;
+    letter-spacing: 2.7px;
+    cursor: pointer;
+}
+
+.longbar{
+    width: 420px;
+    height: 0.5px;
+    position: absolute;
+    z-index: 1;
+    top: 69px;
+    left: 200px;
+    background-color: grey;
+}
+.bar{
+    display: none;
+}
+.tabButton{
+    cursor: pointer;
+}
+.text_margin{
+    margin-top: 13%;
+}
+.above_space{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    color: #D0D6F9;
+}
+.space{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    color: #ffff;
+}
+.below_space{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+.explore{
+    border-radius: 50%;
+    width: 274px;
+    height: 274px;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+.toggle_list{
+    display: none;
+}
+
+
+
+
+
+
+/* tablet view */
+@media (max-width:1000px) {
+    .homebackground{
+        background-image: url(assets/home/background-home-tablet.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    .longbar{
+        display: none;
+    }
+    .push{
+        
+        font-size: 16px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: bold;
+        color: #ffff;
+        letter-spacing: 2.7px;
+        cursor: pointer;
+    }
+    .push:hover{
+        color:gray;
+        transition: 0.3s;
+    }
+    .navbar_above{
+        margin-top: 0rem;
+    }
+    .explore{
+        margin: 160px auto;
+        width: 242px;
+        height: 242px;
+    }
+    
+    
+    
+    
+}
+/* mobile view */
+@media (max-width:600px) {
+    .homebackground{
+        background-image: url(assets/home/background-home-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    .bar{
+        display: inline;
+        cursor: pointer;
+    }
+    .option{
+        display: none;
+    }
+    .longbar{
+        display: none;
+    }
+    .explore{
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+    .above_space{
+        font-size:16px ;
+    }
+    .space{
+        font-size: 80px;
+    }
+    .below_space{
+        font-size: 15px;
+    }
+    .toggle_list{
+        border: 2px solid white;
+        max-width: 100%;
+        width: 70%;
+        background-color: #030a25;
+        border-radius: 5px;
+        position: absolute;
+        padding: 10px;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        
+        transform: translateY(-100%);
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .toggle_list ul{
+        padding-left: 15px;
+        
+    }
+    .toggle_list ul li{
+       font-size: 20px;
+       font-family: 'Barlow Condensed';
+        display: block;
+        font-weight: bold;
+        letter-spacing: 2px;
+        
+    }
+    .toggle_list ul li a{
+        color: white;
+        font-size: 20px;
+        user-select: none;
+        text-decoration: none;
+        list-style: none;
+    }
+    .show{
+        transform: translateY(100%);
+        
+        transition:all 1s ease-in-out;
+    }
+}
+
+/* css for DESTINATION */
+/* laptop view */
+.destinationbackground{
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.moon{
+    width: 445px;
+    height: 445px;
+}
+.tabsmenu .destitab{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.tabsmenu .destitab li{
+    display: inline-block;
+    
+    padding: 10px 20px;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    
+}
+.tabsmenu .destitab li::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #D0D6F9;
+    transition: 0.5s;
+    margin-right: auto;
+}
+.tabsmenu .destitab li:hover::after{
+    width: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.slidebar{
+    background-color: transparent;
+    width: 50px;
+    height: 5px;
+    transition: all .5s ease-in-out;
+}
+.tabsmenu{
+    height: 472px;
+    width: 445px;
+}
+.moonpone{
+    font-size: 100px;
+}
+.line{
+    height: 5px;
+    color: grey;
+}
+.subHeading2{
+    font-size: 14px;
+    font-family: 'Barlow Condensed', sans-serif; 
+    letter-spacing:2.36px ;
+    color: #ffff;
+}
+.subHeading1{
+    font-size: 28px;
+    font-family: 'Bellefair', serif;
+    color: #ffff;
+}
+.text_margin_destination{
+    margin-top: 10%;
+    padding-bottom: 50px;
+}
+.pick{
+    font-size:28px ;
+    color: #ffff;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing:4.72px ;
+    position: absolute;
+    top: 150px;
+    left: 40px;
+}
+
+
+
+/* tablet view */
+@media (max-width:1550px) {
+    .destinationbackground{
+        background-image: url(assets/destination/background-destination-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: auto;
+        background-repeat: no-repeat;
+    }
+    .moon{
+        width: 300px;
+        height: 300px;
+    }
+    .moonpone{
+        font-size: 80px;
+    }
+    .pick{
+        top: 110px;
+        left: 0px;
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        position: absolute;
+    }
+}
+
+
+/* mobile view */
+@media (max-width:600px) {
+    .destinationbackground{
+        background-image: url(assets/destination/background-destination-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    .moon{
+        width: 170px;
+        height: 170px;
+    }
+    .moonpone{
+        font-size: 56px;
+    }
+    .pick{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        top: 88px;
+        left: 0px;
+        
+       
+        position: absolute;
+    }
+}
+
+
+
+/* css for crew page */
+/* laptop view */
+@media (max-width:1550px) {
+    .crewbackground{
+        background-image: url(assets/crew/background-crew-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        
+        height: 100vh;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+    }
+    
+    .crew1{
+        width: 568.07px;
+        height: 600px;
+        object-fit: contain;
+        position: absolute;
+        bottom: 0px;
+        right: 130px;
+        left: 735px;
+    }
+    .career{
+        font-size: 32px;
+        font-family: 'Bellefair';
+        color: #ffff;
+        opacity: 50.42%;
+        letter-spacing: 2px;
+        
+    }
+    .name{
+        font-size: 56px;
+        font-family: 'Bellafair';
+        color: #fff; ;
+        letter-spacing: 2px;
+    }
+    
+    .profile{
+        height:512px;
+        object-fit: contain;
+        width: 568px;
+        position: absolute;
+         bottom: 0;
+        right: 0px; 
+        
+        /* margin-right: 20px; */
+        
+        
+    }
+    .text-width{
+        width: 444px;
+        height: 128px;
+        line-height: 32px;
+        
+    }
+    .meet{
+        font-size:28px ;
+        color: #ffff;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing:4.72px ;
+        position: absolute;
+        top: 140px;
+    }
+    .columnH{
+        height: 512px;
+        width: 568px;
+    }
+    .numberTab{
+        cursor: pointer;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+       
+    }
+    
+    .numberTabHover{
+        width: 20px;
+        height: 27px;
+        border: 2px solid white;
+        border-radius: 100%;
+        margin: 6px;
+        cursor: pointer;
+        background-color: white;
+        scale: 0.5;
+    }
+    .circle{
+        width: 20px;
+        height: 27px;
+        border: 2px solid white;
+        border-radius: 100%;
+        margin: 6px;
+        cursor: pointer;
+        opacity: 0.1;
+        background-color: white;
+        scale: 0.5;
+    }
+}
+
+
+
+/* tablet view */
+@media (max-width:1000px) {
+    .crewbackground{
+        background-image: url(assets/crew/background-crew-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    .text-width{
+        width: 458px;
+        height: 84px;
+        line-height: 28px;
+        margin: 0 auto;
+    }
+    .meet{
+        position: unset;
+        
+    }
+    .career{
+        font-size: 24px;
+    }
+    .name{
+        font-size: 40px;
+    }
+    .text-width{
+        width: 458px;
+        height: 84px;
+    }
+    .profile{
+        position: unset;
+        
+        width: 456px;
+        height: 572px;
+    }
+    .bor{   
+        padding: auto;
+    }
+    
+    
+    
+}
+@media (max-width:600px) {
+    .crewbackground{
+        background-image: url(assets/crew/background-crew-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    .profile{
+        width: 177px;
+        height: 222px;
+        position: unset;
+        padding-left: 20px;
+    }
+    .text-width{
+        width: 300px;
+        height: 100px;
+    }
+    .career{
+        font-size: 16px;
+    }
+    .name{
+        font-size: 24px;
+    }
+    .bor{
+        border: 2px solid grey;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        width: 327px;
+        height: 223px;
+        margin: 0 auto;
+    }
+    .changedirection{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .meet{
+        position: absolute;
+        top: 40px;
+        font-size: 16px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+   
+}
+
+/* css for technology */
+/* laptop view */
+.technologybackground{
+    background-image: url(assets/technology/background-technology-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.ball{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding:30px;
+    font-size: 25px;
+    background: transparent;
+    border: 2px solid #666;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    scale: 0.8;
+    cursor: pointer;
+}
+.ballhover{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding:30px;
+    font-size: 25px;
+    background: white;
+    border: 2px solid #666;
+    color: black;
+    margin-top: 5px;
+    text-align: center;
+    scale: 0.8;
+    cursor: pointer;
+}
+.postpone{
+    position: absolute;
+    top: 0;
+    left: -130px;
+    display: block;
+}
+.spacephoto{
+   position: absolute;
+   right: 0;
+   bottom: 80px;
+   width: 515px;
+   height: 517px;
+}
+.left{
+    margin-left:180px ;
+    position: relative;
+}
+.spacephoto1{
+    display: none;
+}
+.postpone1{
+    display: none;
+}
+.reverse{
+    margin-top: 100px;
+}
+.ter{
+    font-family: 'Barlow Condensed';
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.launch{
+    font-size: 56px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+
+}
+.hello{
+    height: auto;
+}
+/* tablet view */
+@media (max-width:1000px) {
+    .technologybackground{
+        height: 100%;
+    }
+    .spacephoto{
+        position: unset;
+        display: none;
+      
+    }
+    .spacephoto1{
+        display: block;
+        width: 100vw;
+    }
+    .left{
+        margin-left: 0px;
+        position: relative;
+    }
+    .postpone{
+        display: none;
+    }
+    .postpone1{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .reverse{
+        flex-direction: column-reverse;
+        
+    }
+    .ball{
+        scale: 0.7;
+    }
+    .ballhover{
+        scale: 0.7;
+    }
+}
+/* mobile view */
+@media (max-width:600px) {
+    .technologybackground{
+        height: 100%;
+        
+    }
+    .ter{
+        font-size: 14px;
+    }
+    .launch{
+        font-size: 24px;
+    }
+    .reverse{
+        margin-top:100px ;
+    }
+    .ball{
+        scale: 0.5;
+        
+    }
+    .ballhover{
+        scale: 0.5;
+    }
+    
+}
